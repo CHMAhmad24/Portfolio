@@ -72,7 +72,7 @@ export default function Projects() {
       }}
     >
       <div className='sticky top-0 h-screen flex flex-col items-center justify-center'>
-        <h2 className={`text-3xl font-semibold z-10 text-center ${isMobile ? "mt-10" : "mt-8"}`}>
+        <h2 className={`text-3xl font-semibold z-10 text-center ${isMobile ? "mt-4" : "mt-8"}`}>
           My Work
         </h2>
         <div className={`relative w-full flex-1 flex items-center justify-center ${isMobile ? "-mt-4" : ""}`}>
@@ -110,7 +110,7 @@ export default function Projects() {
           }
         </div>
 
-        <div className={`absolute ${isMobile ? "bottom-20" : "bottom-10"}`}>
+        <div className={`absolute ${isMobile ? "top-10" : "bottom-10"}`}>
           <a href={activeProject?.link} target='_blank' rel='noopener noreferrer' className='inline-block px-6 py-3 font-semibold rounded-lg bg-white text-black hover:bg-gray-200 transition-all' aria-label={`View ${activeProject?.title}`}>View Project</a>
         </div>
       </div>
