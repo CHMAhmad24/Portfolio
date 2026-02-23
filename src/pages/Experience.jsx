@@ -71,7 +71,7 @@ export default function Experience() {
     return () => window.removeEventListener("resize", checkMobile);
   }, [])
 
-  const scene_height_VH = isMobile ? 110 * experiences.length : 120 * experiences.length;
+  const scene_height_VH = isMobile ? 80 * experiences.length : 120 * experiences.length;
 
   const { scrollYProgress } = useScroll({
     target: sceneRef,
