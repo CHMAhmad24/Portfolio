@@ -71,7 +71,7 @@ export default function Experience() {
     return () => window.removeEventListener("resize", checkMobile);
   }, [])
 
-  const scene_height_VH = isMobile ? 180 * experiences.length : 120 * experiences.length;
+  const scene_height_VH = isMobile ? 130 * experiences.length : 120 * experiences.length;
 
   const { scrollYProgress } = useScroll({
     target: sceneRef,
@@ -84,7 +84,7 @@ export default function Experience() {
 
   return (
     <section id='experience' className='relative bg-black text-white'>
-      <div ref={sceneRef} style={{ height: `${scene_height_VH}vh`, minHeight: "90vh" }} className='relative'>
+      <div ref={sceneRef} style={{ height: `${scene_height_VH}vh`, minHeight: "120vh" }} className='relative'>
         <div className={`sticky top-0 ${isMobile ? 'h-auto min-h-screen pt-10' : 'h-screen flex flex-col justify-center'}`}>
           <h2 className='text-4xl sm:text-5xl font-semibold mt-5 text-center'>Experience</h2>
           <div className='flex flex-1 items-center justify-center px-6 pb-10'>
