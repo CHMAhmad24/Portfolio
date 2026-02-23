@@ -85,7 +85,7 @@ export default function Experience() {
   return (
     <section id='experience' className='relative bg-black text-white'>
       <div ref={sceneRef} style={{ height: `${scene_height_VH}vh`, minHeight: "120vh" }} className='relative'>
-        <div className='sticky top-0 h-screen flex flex-col ${isMobile ? 'justify-start pt-10' : 'justify-center'}'>
+        <div className={`sticky top-0 h-screen flex flex-col ${isMobile ? 'justify-start pt-10' : 'justify-center'}`}>
           <h2 className='text-4xl sm:text-5xl font-semibold mt-5 text-center'>Experience</h2>
           <div className='flex flex-1 items-center justify-center px-6 pb-10'>
             {!isMobile && (
