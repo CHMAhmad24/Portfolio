@@ -72,7 +72,7 @@ export default function Projects() {
       }}
     >
       <div className='sticky top-0 h-screen flex flex-col items-center justify-center'>
-        <h2 className={`text-3xl font-semibold z-10 text-center ${isMobile ? "mt-16" : "mt-8"}`}>
+        <h2 className={`text-3xl font-semibold z-10 text-center ${isMobile ? "mt-10" : "mt-8"}`}>
           My Work
         </h2>
         <div className={`relative w-full flex-1 flex items-center justify-center ${isMobile ? "-mt-4" : ""}`}>
