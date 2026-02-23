@@ -109,7 +109,7 @@ export default function Experience() {
             )}
 
             {isMobile && (
-              <div className='relative w-full max-w-md'>
+              <div className='relative w-full max-w-md h-max'>
                 <div className='absolute left-0 top-0 bottom-0 w-1.5 bg-white/15 rounded'>
                   <motion.div className='absolute top-0 left-0 w-1.5 bg-white rounded origin-top' style={{ height: lineSize }}></motion.div>
                 </div>
