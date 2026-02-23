@@ -83,8 +83,8 @@ export default function Experience() {
   const lineSize = useTransform(scrollYProgress, (v) => `${v * 100}%`)
 
   return (
-    <section id='experience' className='relative bg-black text-white h-[200vh]'>
-      <div ref={sceneRef} style={{ height: `${scene_height_VH}vh`, minHeight: "120vh" }} className='relative'>
+    <section id='experience' className='relative bg-black text-white'>
+      <div ref={sceneRef} style={{ height: `${scene_height_VH}vh`, minHeight: "200vh" }} className='relative'>
         <div className='sticky top-0 h-screen flex flex-col'>
           <h2 className='text-4xl sm:text-5xl font-semibold mt-5 text-center'>Experience</h2>
           <div className='flex flex-1 items-center justify-center px-6 pb-10'>
@@ -109,7 +109,7 @@ export default function Experience() {
             )}
 
             {isMobile && (
-              <div className='relative w-full max-w-md h-max'>
+              <div className='relative w-full max-w-md h-[200vh]'>
                 <div className='absolute left-0 top-0 bottom-0 w-1.5 bg-white/15 rounded'>
                   <motion.div className='absolute top-0 left-0 w-1.5 bg-white rounded origin-top' style={{ height: lineSize }}></motion.div>
                 </div>
