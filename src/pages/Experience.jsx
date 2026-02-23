@@ -71,7 +71,7 @@ export default function Experience() {
     return () => window.removeEventListener("resize", checkMobile);
   }, [])
 
-  const scene_height_VH = isMobile ? 80 * experiences.length : 120 * experiences.length;
+  const scene_height_VH = isMobile ? 50 * experiences.length : 120 * experiences.length;
 
   const { scrollYProgress } = useScroll({
     target: sceneRef,
@@ -109,7 +109,7 @@ export default function Experience() {
             )}
 
             {isMobile && (
-              <div className='relative w-full max-w-md pb-40'>
+              <div className='relative w-full max-w-md'>
                 <div className='absolute left-0 top-0 bottom-0 w-1.5 bg-white/15 rounded'>
                   <motion.div className='absolute top-0 left-0 w-1.5 bg-white rounded origin-top' style={{ height: lineSize }}></motion.div>
                 </div>
